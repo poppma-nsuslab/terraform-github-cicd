@@ -95,6 +95,7 @@ jobs:
     - name: Terraform Init - ${{ matrix['path'] }}
       id: init
       run: |
+        unset TF_WORKSPACE
         rm -rf .terraform
         terraform init -backend-config='./.env/${{ matrix['path'] || 'dev' }}/backend.tfvars' -upgrade=true -no-color -input=false
         terraform workspace select "${{matrix['path']}}" || terraform workspace new "${{matrix['path']}}"
