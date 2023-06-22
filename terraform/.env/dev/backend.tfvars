@@ -1,5 +1,5 @@
 # dev backend configuration
-bucket  = "poppma-s3-tfstates"
+bucket  = "popp-s3-tfstates"
 key     = "vpc/terraform.tfstate"
-region  = "ap-northeast-2"
+region  = "ap-southeast-1"
 encrypt = true
