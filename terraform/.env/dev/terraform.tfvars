@@ -5,7 +5,7 @@ project     = "poppma"
 vpc_name               = "vpc"
 vpc_cidr_block         = "10.0.0.0/16"
 secondary_cidr_blocks  = []
-vpc_availability_zones = ["ap-northeast-2a", "ap-northeast-2c"]
+vpc_availability_zones = ["ap-southeast-1a", "ap-southeast-1c"]
 
 vpc_public_subnets         = ["10.0.0.0/24", "10.0.1.0/24"]
 vpc_public_subnets_names   = ["poppma-pub-1a", "poppma-pub-1c"]
